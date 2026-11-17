@@ -1,0 +1,11 @@
+node_modules/
+build/
+.dart_tool/
+.idea/
+.vs/
+bin/
+obj/
+__pycache__/
+.venv/
+.env
+*.user

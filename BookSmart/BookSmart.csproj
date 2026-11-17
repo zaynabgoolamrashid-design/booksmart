@@ -1,0 +1,464 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA991D90-81EE-4D1F-9185-81E7716AB2C7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookSmart</RootNamespace>
+    <AssemblyName>BookSmart</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44316</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\AdminHome.aspx" />
+    <Content Include="BookDetails.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="category.aspx" />
+    <Content Include="Checkout.aspx" />
+    <Content Include="Covers\Beowulf.jpg" />
+    <Content Include="Covers\CrushingIt.jpg" />
+    <Content Include="Covers\HOWL.jpg" />
+    <Content Include="Covers\InfernoPoetic.jpg" />
+    <Content Include="Covers\Leaves of Grass_ The Original 1855 Edition.jpg" />
+    <Content Include="Covers\Milk and Honey.jpg" />
+    <Content Include="Covers\odes.jpg" />
+    <Content Include="Covers\Paradise Lost by John Milton %28Includes a list of 20 books that are hard to adapt%29.jpg" />
+    <Content Include="Covers\PurpleCow.jpg" />
+    <Content Include="Covers\rich dad.jpg" />
+    <Content Include="Covers\rumi.jpg" />
+    <Content Include="Covers\startwithwhy.jpg" />
+    <Content Include="Covers\Sylvia Plath, Ariel.jpg" />
+    <Content Include="Covers\The InnovatorManifesto.jpg" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\Site1.css" />
+    <Content Include="Covers\1984 von George Orwell %282021, Gebundene Ausgabe%29 online kaufen _ eBay.jpeg" />
+    <Content Include="Covers\A Farewell To Arms.jpeg" />
+    <Content Include="Covers\Altered carbon %28Laeta Kalogridis%29 2018.jpg" />
+    <Content Include="Covers\AroundTheworld.jpg" />
+    <Content Include="Covers\beachread.jpeg" />
+    <Content Include="Covers\Before I Go To Sleep.jpg" />
+    <Content Include="Covers\Bird Box.jpg" />
+    <Content Include="Covers\Bookstore.jpeg" />
+    <Content Include="Covers\BusinessAdventure.jpg" />
+    <Content Include="Covers\carrie.jpg" />
+    <Content Include="Covers\Contact.jpg" />
+    <Content Include="Covers\Dan Brown - The Da Vinci Code_ I have this_.jpg" />
+    <Content Include="Covers\Dan Brown_ Digital Fortress.jpeg" />
+    <Content Include="Covers\disaster.jpeg" />
+    <Content Include="Covers\Dracula.jpg" />
+    <Content Include="Covers\Dune The Movie Poster.jpg" />
+    <Content Include="Covers\Emma _ Editorial Alma.jpeg" />
+    <Content Include="Covers\ender Game.jpg" />
+    <Content Include="Covers\Foundation.jpg" />
+    <Content Include="Covers\GONE GIRL.jpg" />
+    <Content Include="Covers\Good to Great.jpg" />
+    <Content Include="Covers\Hatchet by Gary Paulsen %282006, Trade Paperback%29 for sale online _ eBay.jpg" />
+    <Content Include="Covers\hatinggame.jpeg" />
+    <Content Include="Covers\HellHouse.jpg" />
+    <Content Include="Covers\Houseofleaves.jpg" />
+    <Content Include="Covers\Hyperion.jpg" />
+    <Content Include="Covers\in the wood.jpg" />
+    <Content Include="Covers\Inferno_ A Novel %28Robert Langdon%29.jpeg" />
+    <Content Include="Covers\bookimg.jpg" />
+    <Content Include="Covers\Into the Wild.jpg" />
+    <Content Include="Covers\it.jpg" />
+    <Content Include="Covers\itends.jpeg" />
+    <Content Include="Covers\Principle.jpg" />
+    <Content Include="Covers\SolomonMines.jpg" />
+    <Content Include="Covers\kiss.jpeg" />
+    <Content Include="Covers\Leviathan Wakes.jpg" />
+    <Content Include="Covers\lifeofpi.jpg" />
+    <Content Include="Covers\Little Liar.jpg" />
+    <Content Include="Covers\Lockeverydoor.jpg" />
+    <Content Include="Covers\mebeforeyou.jpeg" />
+    <Content Include="Covers\MexicanGothic.jpg" />
+    <Content Include="Covers\Neuromancer.jpg" />
+    <Content Include="Covers\no exit.jpg" />
+    <Content Include="Covers\notebook.jpeg" />
+    <Content Include="Covers\Oldmanwars.jpg" />
+    <Content Include="Covers\oneday.jpeg" />
+    <Content Include="Covers\outlander.jpeg" />
+    <Content Include="Covers\Pet Sematary.jpg" />
+    <Content Include="Covers\pride.jpeg" />
+    <Content Include="Covers\Ready Player One [2018].jpg" />
+    <Content Include="Covers\Red Mars.jpg" />
+    <Content Include="Covers\redwhite.jpeg" />
+    <Content Include="Covers\Robinson Crusoe %282016%29.jpg" />
+    <Content Include="Covers\rosie.jpeg" />
+    <Content Include="Covers\salemLot.jpg" />
+    <Content Include="Covers\Sapiens_ A Brief History of Humankind.jpeg" />
+    <Content Include="Covers\sharp object.jpg" />
+    <Content Include="Covers\Silent patient.jpg" />
+    <Content Include="Covers\Snow Crash by Nearl Stephenson.jpg" />
+    <Content Include="Covers\SomethingWicked.jpg" />
+    <Content Include="Covers\Stranger In Her House, The %28Paperback%29.jpg" />
+    <Content Include="Covers\Swiss Family Robinson movie poster.jpg" />
+    <Content Include="Covers\tatbilb.jpeg" />
+    <Content Include="Covers\The Alchemist_.jpg" />
+    <Content Include="Covers\The Millionaire Next Door  .jpg" />
+    <Content Include="Covers\The Waste Land, classic.jpg" />
+    <Content Include="Covers\theemyth.jpg" />
+    <Content Include="Covers\The Fisherman.jpg" />
+    <Content Include="Covers\The Girl with the Dragon Tattoo.jpg" />
+    <Content Include="Covers\The Hobbit, an Unexpected Journey - Cross Stitch Pattern, Pdf Format, Delivered by Email, Movies Cross Stitch - Etsy.jpg" />
+    <Content Include="Covers\The intelligent Investor.jpg" />
+    <Content Include="Covers\The Lean Startup, Eric Ries _ 9781524762407 _ Boeken _ bol_com.jpg" />
+    <Content Include="Covers\The Left Hand of Darkness.jpg" />
+    <Content Include="Covers\The Martian.jpg" />
+    <Content Include="Covers\The Odyssey _3.jpg" />
+    <Content Include="Covers\The Old Man and The Sea.jpeg" />
+    <Content Include="Covers\The Reverse of Everything.jpg" />
+    <Content Include="Covers\The Shining Paperback – 2013 by Stephen King 9780345806789_ eBay.jpeg" />
+    <Content Include="Covers\The Three Musketeers.jpg" />
+    <Content Include="Covers\the4Hourwork.jpg" />
+    <Content Include="Covers\theCouplenextdoor.jpg" />
+    <Content Include="Covers\thedivinecomedy.jpg" />
+    <Content Include="Covers\theExorcist.jpg" />
+    <Content Include="Covers\thefamily upstairs.jpg" />
+    <Content Include="Covers\TheForeverWar.jpg" />
+    <Content Include="Covers\TheHauntingofHillHouse.jpg" />
+    <Content Include="Covers\TheIrliad.jpg" />
+    <Content Include="Covers\theMist.jpg" />
+    <Content Include="Covers\theOdyssey.jpg" />
+    <Content Include="Covers\theSunandHerFlower.jpg" />
+    <Content Include="Covers\TheWomanIntheWindow.jpg" />
+    <Content Include="Covers\Think and Grow Rich _ Think and grow rich, Life changing books, Books to read.jpg" />
+    <Content Include="Covers\Treasure Island_ The Original Classic by Robert Louis Stevenson.jpg" />
+    <Content Include="Covers\Twenty Love Poems and a Song of Despair.jpg" />
+    <Content Include="Covers\twilight.jpeg" />
+    <Content Include="Covers\Victor Frankenstein %282015%29.jpg" />
+    <Content Include="Covers\Watch Journey to the Center of the Earth Full Movie HD facts Online free.jpg" />
+    <Content Include="Covers\weddingdate.jpeg" />
+    <Content Include="Covers\prejudice.jpeg" />
+    <Content Include="Covers\White Fang %282018%29.jpg" />
+    <Content Include="Covers\ZerotoOne.jpg" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\logo.png" />
+    <Content Include="login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Admin\ManageAdmin.aspx" />
+    <Content Include="Admin\ManageBooks.aspx" />
+    <Content Include="MyOrders.aspx" />
+    <Content Include="OrderConfirmation.aspx" />
+    <Content Include="OrderHistory.aspx" />
+    <Content Include="Admin\Orders.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="Admin\Payments.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Admin\Reports.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="Admin\Users.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BookDetails.aspx.cs">
+      <DependentUpon>BookDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookDetails.aspx.designer.cs">
+      <DependentUpon>BookDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CartHelper.cs" />
+    <Compile Include="category.aspx.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="category.aspx.designer.cs">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Author.cs" />
+    <Compile Include="Class\Book.cs" />
+    <Compile Include="Class\Category.cs" />
+    <Compile Include="Class\Order.cs" />
+    <Compile Include="Class\Order_Item.cs" />
+    <Compile Include="Class\Publisher.cs" />
+    <Compile Include="Class\User.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageAdmin.aspx.cs">
+      <DependentUpon>ManageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageAdmin.aspx.designer.cs">
+      <DependentUpon>ManageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageBooks.aspx.cs">
+      <DependentUpon>ManageBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageBooks.aspx.designer.cs">
+      <DependentUpon>ManageBooks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyOrders.aspx.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyOrders.aspx.designer.cs">
+      <DependentUpon>MyOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderConfirmation.aspx.cs">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderConfirmation.aspx.designer.cs">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderHistory.aspx.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderHistory.aspx.designer.cs">
+      <DependentUpon>OrderHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Payments.aspx.cs">
+      <DependentUpon>Payments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Payments.aspx.designer.cs">
+      <DependentUpon>Payments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="wHduP9Q0EkeuVhNo3NHKHg\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56086</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44316/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,44 @@
+﻿.hero-box {
+    background-image: url('../covers/bookimg.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-left: 150px; /* move text block left */
+    padding-top: 230px; /* move text block down */
+    z-index: 1;
+}
+.bg-dark-brown {
+    background-color: #3E2723 !important;
+}
+
+body {
+    background-color: #ca9670;
+}
+
+
+.hero-text {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* soft shadow for readability */
+}
+
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
